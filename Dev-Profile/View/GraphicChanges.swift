@@ -8,10 +8,19 @@
 
 import UIKit
 
-class RoundedEdges: UIImageView {
+class RoundedEdgesImageView: UIImageView {
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.cornerRadius = 10.0
         layer.masksToBounds = true
     }
 }
+    
+    class RoundedEdgesLabel: UILabel {
+        override func awakeFromNib() {
+            super.awakeFromNib()
+            layer.cornerRadius = 10.0
+            layer.masksToBounds = true
+        }
+}
+
